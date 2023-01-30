@@ -1,5 +1,5 @@
 // lenght - Strinqin uzunlugunu alir
-let strg=' Hello  word';
+let strg='  Hello  word';
 console.log(strg.length) // output 12
 
 
@@ -55,3 +55,13 @@ console.log(strg.substr(2,7));  //ello  w 2 den 7 addim sonrasina qeder dondur
 let num = Number(strg)
 
 console.log(typeof num);
+// search - verilen sozun yerini tapir eger tapilmazsa -1 ekrana cixarir
+let str = "Please locate where 'locate' occurs!";
+let pos = str.search("where");
+
+console.log(pos); // Output: 14
+console.log(str.search("hello")); // Output: -1
+
+// match - verilen heriflerin sayini gore value olan array cixarir
+
+console.log(str.match(/a/g)); // (3) ['a', 'a', 'a']
